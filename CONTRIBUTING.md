@@ -76,7 +76,7 @@ python ceremonial-rescue-jp/scripts/test_50_prompts.py
 ## 📋 SKILL.md の行数制限
 
 `SKILL.md` は **500行以下** を維持する必要があります（Agent Skills プラットフォームの制約）。
-現在 354行です。大幅な追加を行う場合は、`references/` ディレクトリへの分離を検討してください。
+現在 356行です。大幅な追加を行う場合は、`references/` ディレクトリへの分離を検討してください。
 
 ## ❓ 質問がある場合
 
