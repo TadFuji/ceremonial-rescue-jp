@@ -1,0 +1,32 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: 冠婚葬祭レスキュー (Ceremonial Rescue JP)
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Tadahiro
+    family-names: Fujikawa
+    alias: TadFuji
+repository-code: 'https://github.com/TadFuji/ceremonial-rescue-jp'
+abstract: >-
+  Japanese ceremonial etiquette rescue Agent Skill.
+  Provides instant guidance for funerals, weddings,
+  seasonal gifts, and milestone celebrations using a
+  hybrid knowledge architecture combining static
+  reference data with dynamic web search.
+keywords:
+  - japanese-culture
+  - ceremonial-etiquette
+  - agent-skill
+  - funerals
+  - weddings
+  - seasonal-gifts
+  - milestone-celebrations
+  - hybrid-knowledge
+license: MIT
+version: 3.0.0
+date-released: '2026-03-22'
