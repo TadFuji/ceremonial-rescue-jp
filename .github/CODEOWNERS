@@ -1,0 +1,9 @@
+# Default owners for everything in the repo
+* @TadFuji
+
+# Scripts require careful review
+/ceremonial-rescue-jp/scripts/ @TadFuji
+
+# Cultural content requires domain expertise
+/ceremonial-rescue-jp/references/ @TadFuji
+/ceremonial-rescue-jp/assets/templates/ @TadFuji

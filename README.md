@@ -10,6 +10,9 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/TadFuji/ceremonial-rescue-jp/actions/workflows/ci.yml"><img src="https://github.com/TadFuji/ceremonial-rescue-jp/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/TadFuji/ceremonial-rescue-jp" alt="License"></a>
+  <img src="https://img.shields.io/badge/python-3.8%2B-blue?logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/version-3.0-blue" alt="version">
   <img src="https://img.shields.io/badge/tests-134%2F134_passed-brightgreen" alt="tests">
   <img src="https://img.shields.io/badge/templates-12-informational" alt="templates">
@@ -534,4 +537,12 @@ python date_validator.py --date 2026-04-15 --event funeral
 
 ## ライセンス
 
-MIT License
+[MIT License](LICENSE)
+
+---
+
+<p align="center">
+  <a href="CONTRIBUTING.md">Contributing</a> ·
+  <a href="CODE_OF_CONDUCT.md">行動規範</a> ·
+  <a href="SECURITY.md">セキュリティ</a>
+</p>

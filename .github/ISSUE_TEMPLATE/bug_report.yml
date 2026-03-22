@@ -1,0 +1,88 @@
+name: "🐛 バグ報告"
+description: "バグや不具合を報告する"
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグ報告ありがとうございます！以下の項目を埋めてください。
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 概要
+      description: "バグの内容を簡潔に説明してください"
+      placeholder: "例: amount_validator.py が結婚式の金額 30,000円を偶数と判定する"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: "バグを再現する手順を記載してください"
+      placeholder: |
+        1. `python amount_validator.py --amount 30000 --type wedding` を実行
+        2. 出力を確認
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待される動作
+      description: "正しくはどう動くべきですか？"
+      placeholder: "例: 30,000円は奇数（万円単位で3）なので、偶数警告が出るべきではない"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の動作
+      description: "実際にはどう動きましたか？"
+      placeholder: "例: EVEN_NUMBER 警告が表示された"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: 対象コンポーネント
+      description: "バグが発生したファイル・コンポーネントを選択してください"
+      options:
+        - "SKILL.md（メイン指示書）"
+        - "scripts/amount_validator.py"
+        - "scripts/ng_word_checker.py"
+        - "scripts/date_validator.py"
+        - "references/（静的知識ファイル）"
+        - "assets/templates/（テンプレート）"
+        - "その他"
+    validations:
+      required: true
+
+  - type: input
+    id: python-version
+    attributes:
+      label: Python バージョン
+      description: "`python --version` の出力を記載してください"
+      placeholder: "3.12.0"
+    validations:
+      required: false
+
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: "例: Windows 11, macOS 15, Ubuntu 24.04"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 補足情報
+      description: "スクリーンショット、ログ出力、その他の情報があれば記載してください"
+    validations:
+      required: false
