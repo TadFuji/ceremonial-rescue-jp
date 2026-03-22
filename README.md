@@ -488,7 +488,7 @@ python ng_word_checker.py --text "メッセージ" --type wedding
 
 ```bash
 # 弔事の金額チェック
-python amount_validator.py --amount 5000 --type funeral --relationship colleague_parent
+python amount_validator.py --amount 5000 --type funeral --relationship colleague --target parent
 # → ✅ 5,000円: 相場範囲内 (3,000〜10,000円)
 
 # 偶数チェック
