@@ -22,9 +22,8 @@ Every request follows these 9 steps in order:
 5. **Company Mode Check** — Personal vs. department vs. company response (§5)
 6. **📚 Static Knowledge Load** — Load invariant etiquette, NG words, ceremony procedures from `references/` (§6)
 7. **🔍 Web Research** — Search for latest amounts, trends, year-specific info only (§6)
-8. **Response Set Composition** — Build 7-layer response from static + web data (§7)
-9. **Content Generation** — Generate text + files with template + profile merge (§8)
-10. **Cross-Check** — NG words, amounts, dates, consistency verification (§9)
+8. **Response Set Generation** — Build 7-layer response, generate text + files with template + profile merge (§7, §8)
+9. **Cross-Check** — NG words, amounts, dates, consistency verification (§9)
 
 ---
 
