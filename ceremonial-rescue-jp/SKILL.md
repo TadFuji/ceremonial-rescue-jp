@@ -33,13 +33,13 @@ At skill activation, autonomously search the workspace for user information. Nev
 
 ### Search Steps
 
-1. **List workspace root** — Get directory listing
+1. **List workspace root + global config** — Get directory listing of workspace root AND platform config directories (e.g., `~/.gemini/`, `~/.config/`). Profile info often lives outside the workspace.
 2. **Identify candidates** by signals (priority order):
-   - a. Platform-defined profile files: `USER.md`, `CLAUDE.md`, `IDENTITY.md`, `SOUL.md`, `GEMINI.md`, `README.md`, `AGENTS.md`
+   - a. Platform-defined profile files: `USER.md`, `CLAUDE.md`, `IDENTITY.md`, `SOUL.md`, `GEMINI.md`, `README.md`, `AGENTS.md`, `user_profile.md`, `profile.md`
    - b. Keyword matches: `about`, `profile`, `me`, `user`, `自己紹介`, `プロファイル`
    - c. Context folders: `context/`, `config/`, `docs/`, `notes/`
    - d. Other `.md`/`.txt` files (if ≤10 files, scan first lines)
-3. **Read candidates** — Extract: name, employer, title, region, family, religion
+3. **Read candidates** — Extract: name, age/birth year, employer, title, region, family, religion
 4. **Store internally** — Hold in context. Do not report to user.
 5. **Missing = OK** — Continue without. Never add extra questions.
 
