@@ -88,7 +88,7 @@ At skill activation, autonomously search the workspace for user information. Nev
 |---|---|---|
 | 快気祝い | 病気回復のお返し | 本人→周囲。お見舞いの半返し〜1/3。消え物が定番 |
 | 入学祝い | 入学・入園 | 金額は学校レベル×関係性で変動。お返し=内祝い |
-| 七五三 | 3/5/7歳のお祝い | 親族間が一般的。親は準備側（神社+食事会） |
+| 七五三 | 3/5/7歳のお祝い | 親族間が一般的。親は準備側（神社+食事会）。伝統: 3歳=男女, 5歳=男, 7歳=女。ただし近年は性別問わず祝う家庭も多い→ご家族に確認の上、祝う方向で案内 |
 | 還暦祝い | 60歳の祝い | 赤いもの贈呈の慣習。古希(70)/喜寿(77)/米寿(88)も同フロー |
 
 **Cannot classify?** → Ask 1 multiple-choice question.
@@ -352,3 +352,4 @@ Key invariant rules (always apply, no web search needed):
 - ⚠️ Profile data should be silently used — never say "your profile says you work at X."
 - ⚠️ 快気祝い is the SICK PERSON giving back—not 「お見舞い」 (which is given to the sick person). Confusing the direction is a common error.
 - ⚠️ お中元/お歳暮 timing differs by region (especially 関東 vs 関西). Always search for regional timing when user's region is known.
+- ⚠️ 七五三 5歳は伝統的に男の子の行事だが、近年は女の子も祝う家庭が増えている。「お祝い不要」と読める回答はNG — 結論（お祝いしましょう）を先に出し、伝統との違いは補足として添える。
