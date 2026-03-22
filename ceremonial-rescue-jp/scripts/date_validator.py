@@ -55,8 +55,6 @@ def calc_rokuyo(target_date: date) -> str:
     # For a truly accurate implementation, use the `jpholiday` or `koyomi` library
     # This fallback gives a reasonable approximation
 
-    ref_date = date(2026, 1, 1)
-    days_diff = (target_date - ref_date).days
     # Approximate: rokuyō shifts by 1 each day, resets at month boundaries
     # This uses a simplified lunar approximation
     month = target_date.month

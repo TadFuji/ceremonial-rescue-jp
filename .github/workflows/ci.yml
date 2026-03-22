@@ -56,4 +56,4 @@ jobs:
 
       - name: Run flake8
         working-directory: ceremonial-rescue-jp/scripts
-        run: flake8 --max-line-length=120 --ignore=E501,W503 *.py
+        run: flake8 --max-line-length=120 --ignore=E241,E501,W503 *.py

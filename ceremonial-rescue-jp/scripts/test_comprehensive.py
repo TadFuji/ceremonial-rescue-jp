@@ -14,9 +14,9 @@ import os
 # Add parent scripts dir to path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from amount_validator import validate_amount
-from ng_word_checker import check_text
-from date_validator import validate_date
+from amount_validator import validate_amount  # noqa: E402
+from ng_word_checker import check_text  # noqa: E402
+from date_validator import validate_date  # noqa: E402
 
 # ══════════════════════════════════════════════════
 # Test tracking
@@ -25,6 +25,7 @@ total = 0
 passed = 0
 failed = 0
 results = []
+
 
 def test(test_id, description, category, func, expected_check, *args, **kwargs):
     """Run a single test and record result."""
@@ -55,6 +56,7 @@ def test(test_id, description, category, func, expected_check, *args, **kwargs):
             "result_summary": str(e),
         })
 
+
 def summarize(result):
     """Create a brief summary of a result dict."""
     if "passed" in result:
@@ -76,9 +78,11 @@ def summarize(result):
         return s
     return str(result)[:200]
 
+
 # ══════════════════════════════════════════════════
 # Category A: 葬儀（Funeral）金額バリデーション (10 tests)
 # ══════════════════════════════════════════════════
+
 print("=" * 60)
 print("Category A: 葬儀 — 金額バリデーション")
 print("=" * 60)
@@ -508,7 +512,7 @@ with open(output_path, "w", encoding="utf-8") as f:
         "total": total,
         "passed": passed,
         "failed": failed,
-        "pass_rate": f"{passed/total*100:.1f}%",
+        "pass_rate": f"{passed / total * 100:.1f}%",
         "results": results,
     }, f, ensure_ascii=False, indent=2)
 

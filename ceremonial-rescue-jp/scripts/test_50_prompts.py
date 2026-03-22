@@ -17,9 +17,9 @@ import os
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from amount_validator import validate_amount
-from ng_word_checker import check_text
-from date_validator import validate_date
+from amount_validator import validate_amount  # noqa: E402
+from ng_word_checker import check_text  # noqa: E402
+from date_validator import validate_date  # noqa: E402
 
 # ══════════════════════════════════════════════════
 # Test infrastructure
@@ -28,6 +28,7 @@ total = 0
 passed = 0
 failed = 0
 results = []
+
 
 def test(test_id, prompt, category, checks):
     """Run multiple checks for a single user prompt scenario."""
@@ -74,6 +75,7 @@ def test(test_id, prompt, category, checks):
         "checks": check_details,
     })
 
+
 def summarize(result):
     if "passed" in result:
         s = f"passed={result['passed']}"
@@ -94,9 +96,11 @@ def summarize(result):
         return s
     return str(result)[:200]
 
+
 # ══════════════════════════════════════════════════
 # References file existence check
 # ══════════════════════════════════════════════════
+
 print("=" * 70)
 print("Pre-check: references/ files exist and contain expected content")
 print("=" * 70)
@@ -448,7 +452,7 @@ with open(output_path, "w", encoding="utf-8") as f:
         "total": total,
         "passed": passed,
         "failed": failed,
-        "pass_rate": f"{passed/total*100:.1f}%",
+        "pass_rate": f"{passed / total * 100:.1f}%",
         "scenarios": len([r for r in results if r["category"] != "references"]),
         "results": results,
     }, f, ensure_ascii=False, indent=2)
